@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interaction Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="#">Your Name</a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a class="header__menu__item" href="#home">Home</a></li>
+        <li><a class="header__menu__item" href="#about">About</a></li>
+        <li><a class="header__menu__item" href="#skills">Skills</a></li>
+        <li><a class="header__menu__item" href="#works">Works</a></li>
+        <li><a class="header__menu__item" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="header__toggle" aria-label="navigation menu toggle">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div id="particle-canvas"></div> 
+      
+      <div class="home__content">
+        <p class="home__intro">안녕하세요, 저는</p>
+       <h1 class="home__title">
+    <div class="home__title-line">새로운 경험을 만드는</div>
+    <div class="home__title-line">웹 디자이너입니다.</div>
+</h1>
+        <p class="home__description">
+          사용자의 시선이 머무는 곳, 그곳에 저의 디자인이 있습니다. <br>
+          직관적인 UI와 매력적인 UX로 살아 숨 쉬는 웹을 만듭니다.
+        </p>
+        <a class="home__contact-btn" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+       <div class="section__container">
+        <h1 class="section__title">About Me</h1>
+        <p class="section__description">저는 사람들의 일상에 긍정적인 영향을 주는 디자인에 관심이 많습니다. <br> 사용자의 입장에서 깊이 공감하고, 그들의 필요를 채워주는 솔루션을 시각적으로 구현하는 과정에서 큰 보람을 느낍니다. 함께 성장하며 멋진 결과물을 만들어갈 동료를 기다립니다.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1 class="section__title">My Skills</h1>
+        <p class="section__description">다양한 디자인 툴과 개발 언어에 대한 깊은 이해를 바탕으로 아이디어를 현실로 만듭니다.</p>
+
+        <div class="skills__grid">
+          <div class="skill__item">
+            <div class="skill__icon">HTML5</div>
+            <span class="skill__name">HTML5</span>
+          </div>
+          <div class="skill__item">
+            <div class="skill__icon">CSS3</div>
+            <span class="skill__name">CSS3</span>
+          </div>
+          <div class="skill__item">
+            <div class="skill__icon">JS</div>
+            <span class="skill__name">JavaScript</span>
+          </div>
+          <div class="skill__item">
+            <div class="skill__icon">Figma</div>
+            <span class="skill__name">Figma</span>
+          </div>
+          <div class="skill__item">
+            <div class="skill__icon">PS</div>
+            <span class="skill__name">Photoshop</span>
+          </div>
+          <div class="skill__item">
+            <div class="skill__icon">Ai</div>
+            <span class="skill__name">Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="section__container">
+        <h1 class="section__title">My Works</h1>
+        <p class="section__description"> 그동안 작업했던 포트폴리오를 소개합니다.</p>
+        
+        <div class="work__categories">
+          <button class="category__btn active" data-filter="*">All <span class="category__count">6</span></button>
+          <button class="category__btn" data-filter="visual">Visual Design <span class="category__count">3</span></button>
+          <button class="category__btn" data-filter="web">Web Design <span class="category__count">3</span></button>
+          <button class="category__btn" data-filter="mobile">Motion Graphic <span class="category__count">0</span></button>
+        </div>
+
+        <div class="work__projects">
+          <a href="#" class="project" data-type="visual">
+            <img src="image/스크린샷 2025-09-30 165636.png" alt="Visual Design 1" class="project__img">
+            <div class="project__description">
+              <h3>Project Title 1</h3>
+              <span>Visual Design</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="visual">
+            <img src="image/스크린샷 2025-09-30 165942.png" alt="Visual Design 2" class="project__img">
+            <div class="project__description">
+              <h3>Project Title 2</h3>
+              <span>Visual Design</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="visual">
+            <img src="image/스크린샷 2025-09-30 170113.png" alt="Visual Design 3" class="project__img">
+            <div class="project__description">
+              <h3>Project Title 3</h3>
+              <span>Visual Design</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="web">
+            <img src="image/202409131019502126.png" alt="Web Design 1" class="project__img">
+            <div class="project__description">
+              <h3>Project Title 4</h3>
+              <span>Web Design</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="web">
+            <img src="image/손목보호대.png" alt="Web Design 2" class="project__img">
+            <div class="project__description">
+              <h3>Project Title 5</h3>
+              <span>Web Design</span>
+            </div>
+          </a>
+          <a href="#" class="project" data-type="web">
+            <img src="image/스크린샷 2025-09-30 171951.png" alt="Web Design 3" class="project__img">
+            <div class="project__description">
+              <h3>Project Title 6</h3>
+              <span>Web Design</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__container">
+        <h1 class="section__title">Let's Talk</h1>
+        <h2 class="contact__email">your.email@example.com</h2>
+        <div class="contact__links">
+          <a href="https://github.com/Github3306/gothud-test/issues" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/your-id" target="_blank">LinkedIn</a>
+        </div>
+        <p class="contact__rights">© 2025 Your Name - All rights reserved</p>
+      </div>
+    </section>
+  </main>
+
+  <aside>
+    <button class="arrow-up" aria-label="Go to top">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+  </aside>
+</body>
+</html>
